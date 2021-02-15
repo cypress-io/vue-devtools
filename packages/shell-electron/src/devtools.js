@@ -27,6 +27,7 @@ socket.on('vue-devtools-init', () => {
   if (reload) return reload()
 
   initDevTools({
+    el: '#app',
     connect (callback) {
       const wall = {
         listen (fn) {

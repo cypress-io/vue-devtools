@@ -1,0 +1,22 @@
+{
+  "name": "vue-devtools-inline",
+  "version": "0.0.0",
+  "main": "./build/main.js",
+  "dependencies": {
+    "@vue-devtools/app-backend": "^0.0.0",
+    "@vue-devtools/app-frontend": "^0.0.0",
+    "@vue-devtools/shared-utils": "^0.0.0"
+  },
+  "devDependencies": {
+    "@vue-devtools/build-tools": "^0.0.0",
+    "raw-loader": "^3.0.2",
+    "webpack": "^4.19.0",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.8"
+  },
+  "scripts": {
+    "build-backend": "webpack --entry ./src/backend.js --output ./build/backend.js",
+    "build-frontend": "webpack --entry ./src/main.js --output ./build/main.js",
+    "build": "yarn build-backend && yarn build-frontend"
+  }
+}

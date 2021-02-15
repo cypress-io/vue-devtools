@@ -4,6 +4,7 @@ import { initDevTools } from '@front'
 import Bridge from '@utils/bridge'
 
 initDevTools({
+  el: '#app',
 
   /**
    * Inject backend, connect to background, and send back the bridge.
